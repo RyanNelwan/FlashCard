@@ -1,2 +1,2 @@
 # FlashCard
-Code sample of Ryan Nelwan
+Must run `npm install bcrypt` first
