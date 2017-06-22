@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{defaultTitle}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{#each defaultCssFiles}}
+            <link href="css/{{this}}" rel="stylesheet" media="screen">
+        {{/each}}
+
+    </head>
+    <body>
+
+        {{{content}}}
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+        
+        {{#each defaultJsFiles}}
+            <script src="js/{{this}}"></script>
+        {{/each}}
+
+        {{#each jsFiles}}
+            <script src="js/{{this}}"></script>
+        {{/each}}
+
+    </body>
+</html>
